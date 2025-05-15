@@ -1,0 +1,24 @@
+{
+  "CN": "MyVPN-CA",
+  "key": {
+    "algo": "rsa",
+    "size": 4096
+  },
+   "signing": {
+    "default": {
+      "expiry": "175200h",
+      "usages": ["cert sign", "crl sign"],
+      "ca_constraint": {"is_ca": true}
+    }
+  },
+  "names": [
+    {
+      "C": "US",
+     "ST": "California",
+      "L": "San Francisco",
+      "O": "Cosmos Inc.",
+      "OU": "Network & Security Department"
+    }
+  ]
+  
+}
